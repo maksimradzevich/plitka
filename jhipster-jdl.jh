@@ -1,0 +1,82 @@
+entity Admins{
+	fio String,
+    phone String,
+    shopAddress String
+}
+
+entity Clients {
+	fio String,
+    phone String,
+    address String,
+    totalPrice Double
+}
+
+entity CourseParts {
+	npart Integer,
+    downloadLink String,
+    downloadDescription String,
+    testName String,
+    testQuestionCount Integer
+}
+
+entity Dostavka {
+	date LocalDate,
+    name String,
+    count Integer,
+    price Double,
+    buyerPhone String,
+    buyerAddress String,
+    buyerFio String
+}
+
+entity Imports {
+	date LocalDate,
+    name String,
+    count Integer,
+    price Double
+}
+
+entity Shops {
+	address String,
+    time String,
+    name String,
+    phone String
+}
+
+entity Otzyvi {
+	clientFio String,
+    text String,
+    itemName String,
+    date LocalDate
+}
+
+entity Plitka {
+	name String,
+    price Double,
+    color String,
+    material String,
+    size String,
+    shopAddress String,
+    count Integer
+}
+
+entity Sells {
+	date LocalDate,
+    count Integer,
+    totalPrice Double,
+    clientCounts Integer
+}
+
+entity Solders {
+	fio String,
+    phone String,
+    address String,
+    shop String,
+    plitkaCount String
+}
+
+
+
+
+
+
