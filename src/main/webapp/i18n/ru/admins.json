@@ -2,23 +2,23 @@
   "plitkashopApp": {
     "admins": {
       "home": {
-        "title": "Admins",
-        "createLabel": "Создать новый Admins",
-        "createOrEditLabel": "Создать или отредактировать Admins",
+        "title": "Администраторы",
+        "createLabel": "Создать нового администратора",
+        "createOrEditLabel": "Создать или отредактировать администраторы",
         "notFound": "No Admins found"
       },
-      "created": "Новый Admins создан с идентификатором {{ param }}",
-      "updated": "Admins обновлен с идентификатором {{ param }}",
-      "deleted": "Admins удален с идентификатором {{ param }}",
+      "created": "Новый администратор создан с идентификатором {{ param }}",
+      "updated": "Администратор обновлен с идентификатором {{ param }}",
+      "deleted": "Администратор удален с идентификатором {{ param }}",
       "delete": {
-        "question": "Вы уверены что хотите удалить Admins {{ id }}?"
+        "question": "Вы уверены что хотите удалить администратора {{ id }}?"
       },
       "detail": {
-        "title": "Admins"
+        "title": "Администратор"
       },
-      "fio": "Fio",
-      "phone": "Phone",
-      "shopAddress": "Shop Address"
+      "fio": "ФИО",
+      "phone": "Телефон",
+      "shopAddress": "Адрес Магазина"
     }
   }
 }
