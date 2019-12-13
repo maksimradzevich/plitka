@@ -1,0 +1,28 @@
+{
+  "plitkashopApp": {
+    "plitka": {
+      "home": {
+        "title": "Plitkas",
+        "createLabel": "Создать новый Plitka",
+        "createOrEditLabel": "Создать или отредактировать Plitka",
+        "notFound": "No Plitkas found"
+      },
+      "created": "Новый Plitka создан с идентификатором {{ param }}",
+      "updated": "Plitka обновлен с идентификатором {{ param }}",
+      "deleted": "Plitka удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Plitka {{ id }}?"
+      },
+      "detail": {
+        "title": "Plitka"
+      },
+      "name": "Name",
+      "price": "Price",
+      "color": "Color",
+      "material": "Material",
+      "size": "Size",
+      "shopAddress": "Shop Address",
+      "count": "Count"
+    }
+  }
+}

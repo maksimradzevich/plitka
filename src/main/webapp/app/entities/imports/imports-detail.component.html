@@ -1,0 +1,39 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="imports">
+            <h2><span jhiTranslate="plitkashopApp.imports.detail.title">Imports</span> {{imports.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="plitkashopApp.imports.date">Date</span></dt>
+                <dd>
+                    <span>{{imports.date}}</span>
+                </dd>
+                <dt><span jhiTranslate="plitkashopApp.imports.name">Name</span></dt>
+                <dd>
+                    <span>{{imports.name}}</span>
+                </dd>
+                <dt><span jhiTranslate="plitkashopApp.imports.count">Count</span></dt>
+                <dd>
+                    <span>{{imports.count}}</span>
+                </dd>
+                <dt><span jhiTranslate="plitkashopApp.imports.price">Price</span></dt>
+                <dd>
+                    <span>{{imports.price}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/imports', imports.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

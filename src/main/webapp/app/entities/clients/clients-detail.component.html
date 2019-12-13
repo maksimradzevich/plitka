@@ -1,0 +1,39 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="clients">
+            <h2><span jhiTranslate="plitkashopApp.clients.detail.title">Clients</span> {{clients.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="plitkashopApp.clients.fio">Fio</span></dt>
+                <dd>
+                    <span>{{clients.fio}}</span>
+                </dd>
+                <dt><span jhiTranslate="plitkashopApp.clients.phone">Phone</span></dt>
+                <dd>
+                    <span>{{clients.phone}}</span>
+                </dd>
+                <dt><span jhiTranslate="plitkashopApp.clients.address">Address</span></dt>
+                <dd>
+                    <span>{{clients.address}}</span>
+                </dd>
+                <dt><span jhiTranslate="plitkashopApp.clients.totalPrice">Total Price</span></dt>
+                <dd>
+                    <span>{{clients.totalPrice}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/clients', clients.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+{
+  "plitkashopApp": {
+    "sells": {
+      "home": {
+        "title": "Sells",
+        "createLabel": "Создать новый Sells",
+        "createOrEditLabel": "Создать или отредактировать Sells",
+        "notFound": "No Sells found"
+      },
+      "created": "Новый Sells создан с идентификатором {{ param }}",
+      "updated": "Sells обновлен с идентификатором {{ param }}",
+      "deleted": "Sells удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Sells {{ id }}?"
+      },
+      "detail": {
+        "title": "Sells"
+      },
+      "date": "Date",
+      "count": "Count",
+      "totalPrice": "Total Price",
+      "clientCounts": "Client Counts"
+    }
+  }
+}

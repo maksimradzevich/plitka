@@ -1,0 +1,24 @@
+{
+  "plitkashopApp": {
+    "admins": {
+      "home": {
+        "title": "Admins",
+        "createLabel": "Создать новый Admins",
+        "createOrEditLabel": "Создать или отредактировать Admins",
+        "notFound": "No Admins found"
+      },
+      "created": "Новый Admins создан с идентификатором {{ param }}",
+      "updated": "Admins обновлен с идентификатором {{ param }}",
+      "deleted": "Admins удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Admins {{ id }}?"
+      },
+      "detail": {
+        "title": "Admins"
+      },
+      "fio": "Fio",
+      "phone": "Phone",
+      "shopAddress": "Shop Address"
+    }
+  }
+}

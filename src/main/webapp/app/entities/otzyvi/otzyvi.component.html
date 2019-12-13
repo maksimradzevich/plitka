@@ -1,0 +1,61 @@
+<div>
+    <h2 id="page-heading">
+        <span jhiTranslate="plitkashopApp.otzyvi.home.title">Otzyvis</span>
+        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-otzyvi" [routerLink]="['/otzyvi/new']">
+            <fa-icon [icon]="'plus'"></fa-icon>
+            <span  jhiTranslate="plitkashopApp.otzyvi.home.createLabel">
+            Create a new Otzyvi
+            </span>
+        </button>
+    </h2>
+    <jhi-alert-error></jhi-alert-error>
+    <jhi-alert></jhi-alert>
+    <br/>
+    <div class="alert alert-warning" *ngIf="otzyvis?.length === 0">
+        <span jhiTranslate="plitkashopApp.otzyvi.home.notFound">No otzyvis found</span>
+    </div>
+    <div class="table-responsive" *ngIf="otzyvis?.length > 0">
+        <table class="table table-striped" aria-describedby="page-heading">
+            <thead>
+            <tr>
+            <th scope="col" ><span jhiTranslate="global.field.id">ID</span></th>
+            <th scope="col" ><span jhiTranslate="plitkashopApp.otzyvi.clientFio">Client Fio</span></th>
+            <th scope="col" ><span jhiTranslate="plitkashopApp.otzyvi.text">Text</span></th>
+            <th scope="col" ><span jhiTranslate="plitkashopApp.otzyvi.itemName">Item Name</span></th>
+            <th scope="col" ><span jhiTranslate="plitkashopApp.otzyvi.date">Date</span></th>
+            <th scope="col"></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let otzyvi of otzyvis ;trackBy: trackId">
+                <td><a [routerLink]="['/otzyvi', otzyvi.id, 'view' ]">{{otzyvi.id}}</a></td>
+                <td>{{otzyvi.clientFio}}</td>
+                <td>{{otzyvi.text}}</td>
+                <td>{{otzyvi.itemName}}</td>
+                <td>{{otzyvi.date | date:'mediumDate'}}</td>
+                <td class="text-right">
+                    <div class="btn-group">
+                        <button type="submit"
+                                [routerLink]="['/otzyvi', otzyvi.id, 'view' ]"
+                                class="btn btn-info btn-sm">
+                            <fa-icon [icon]="'eye'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/otzyvi', otzyvi.id, 'edit']"
+                                class="btn btn-primary btn-sm">
+                            <fa-icon [icon]="'pencil-alt'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                        </button>
+                        <button type="submit" (click)="delete(otzyvi)"
+                                class="btn btn-danger btn-sm">
+                            <fa-icon [icon]="'times'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

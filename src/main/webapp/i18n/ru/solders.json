@@ -1,0 +1,26 @@
+{
+  "plitkashopApp": {
+    "solders": {
+      "home": {
+        "title": "Solders",
+        "createLabel": "Создать новый Solders",
+        "createOrEditLabel": "Создать или отредактировать Solders",
+        "notFound": "No Solders found"
+      },
+      "created": "Новый Solders создан с идентификатором {{ param }}",
+      "updated": "Solders обновлен с идентификатором {{ param }}",
+      "deleted": "Solders удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Solders {{ id }}?"
+      },
+      "detail": {
+        "title": "Solders"
+      },
+      "fio": "Fio",
+      "phone": "Phone",
+      "address": "Address",
+      "shop": "Shop",
+      "plitkaCount": "Plitka Count"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "plitkashopApp": {
+    "shops": {
+      "home": {
+        "title": "Shops",
+        "createLabel": "Создать новый Shops",
+        "createOrEditLabel": "Создать или отредактировать Shops",
+        "notFound": "No Shops found"
+      },
+      "created": "Новый Shops создан с идентификатором {{ param }}",
+      "updated": "Shops обновлен с идентификатором {{ param }}",
+      "deleted": "Shops удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Shops {{ id }}?"
+      },
+      "detail": {
+        "title": "Shops"
+      },
+      "address": "Address",
+      "time": "Time",
+      "name": "Name",
+      "phone": "Phone"
+    }
+  }
+}

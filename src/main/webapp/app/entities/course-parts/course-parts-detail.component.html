@@ -1,0 +1,43 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="courseParts">
+            <h2><span jhiTranslate="plitkashopApp.courseParts.detail.title">Course Parts</span> {{courseParts.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="plitkashopApp.courseParts.npart">Npart</span></dt>
+                <dd>
+                    <span>{{courseParts.npart}}</span>
+                </dd>
+                <dt><span jhiTranslate="plitkashopApp.courseParts.downloadLink">Download Link</span></dt>
+                <dd>
+                    <span>{{courseParts.downloadLink}}</span>
+                </dd>
+                <dt><span jhiTranslate="plitkashopApp.courseParts.downloadDescription">Download Description</span></dt>
+                <dd>
+                    <span>{{courseParts.downloadDescription}}</span>
+                </dd>
+                <dt><span jhiTranslate="plitkashopApp.courseParts.testName">Test Name</span></dt>
+                <dd>
+                    <span>{{courseParts.testName}}</span>
+                </dd>
+                <dt><span jhiTranslate="plitkashopApp.courseParts.testQuestionCount">Test Question Count</span></dt>
+                <dd>
+                    <span>{{courseParts.testQuestionCount}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/course-parts', courseParts.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

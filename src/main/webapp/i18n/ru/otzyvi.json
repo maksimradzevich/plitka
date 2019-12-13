@@ -1,0 +1,25 @@
+{
+  "plitkashopApp": {
+    "otzyvi": {
+      "home": {
+        "title": "Otzyvis",
+        "createLabel": "Создать новый Otzyvi",
+        "createOrEditLabel": "Создать или отредактировать Otzyvi",
+        "notFound": "No Otzyvis found"
+      },
+      "created": "Новый Otzyvi создан с идентификатором {{ param }}",
+      "updated": "Otzyvi обновлен с идентификатором {{ param }}",
+      "deleted": "Otzyvi удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Otzyvi {{ id }}?"
+      },
+      "detail": {
+        "title": "Otzyvi"
+      },
+      "clientFio": "Client Fio",
+      "text": "Text",
+      "itemName": "Item Name",
+      "date": "Date"
+    }
+  }
+}

@@ -7,6 +7,16 @@
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "Сущности",
+        "admins": "Admins",
+        "clients": "Clients",
+        "courseParts": "Course Parts",
+        "dostavka": "Dostavka",
+        "imports": "Imports",
+        "shops": "Shops",
+        "otzyvi": "Otzyvi",
+        "plitka": "Plitka",
+        "sells": "Sells",
+        "solders": "Solders",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

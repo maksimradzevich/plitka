@@ -1,0 +1,25 @@
+{
+  "plitkashopApp": {
+    "imports": {
+      "home": {
+        "title": "Imports",
+        "createLabel": "Создать новый Imports",
+        "createOrEditLabel": "Создать или отредактировать Imports",
+        "notFound": "No Imports found"
+      },
+      "created": "Новый Imports создан с идентификатором {{ param }}",
+      "updated": "Imports обновлен с идентификатором {{ param }}",
+      "deleted": "Imports удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Imports {{ id }}?"
+      },
+      "detail": {
+        "title": "Imports"
+      },
+      "date": "Date",
+      "name": "Name",
+      "count": "Count",
+      "price": "Price"
+    }
+  }
+}

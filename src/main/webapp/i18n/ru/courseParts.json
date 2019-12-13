@@ -1,0 +1,26 @@
+{
+  "plitkashopApp": {
+    "courseParts": {
+      "home": {
+        "title": "Course Parts",
+        "createLabel": "Создать новый Course Parts",
+        "createOrEditLabel": "Создать или отредактировать Course Parts",
+        "notFound": "No Course Parts found"
+      },
+      "created": "Новый Course Parts создан с идентификатором {{ param }}",
+      "updated": "Course Parts обновлен с идентификатором {{ param }}",
+      "deleted": "Course Parts удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Course Parts {{ id }}?"
+      },
+      "detail": {
+        "title": "Course Parts"
+      },
+      "npart": "Npart",
+      "downloadLink": "Download Link",
+      "downloadDescription": "Download Description",
+      "testName": "Test Name",
+      "testQuestionCount": "Test Question Count"
+    }
+  }
+}

@@ -1,0 +1,51 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="dostavka">
+            <h2><span jhiTranslate="plitkashopApp.dostavka.detail.title">Dostavka</span> {{dostavka.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="plitkashopApp.dostavka.date">Date</span></dt>
+                <dd>
+                    <span>{{dostavka.date}}</span>
+                </dd>
+                <dt><span jhiTranslate="plitkashopApp.dostavka.name">Name</span></dt>
+                <dd>
+                    <span>{{dostavka.name}}</span>
+                </dd>
+                <dt><span jhiTranslate="plitkashopApp.dostavka.count">Count</span></dt>
+                <dd>
+                    <span>{{dostavka.count}}</span>
+                </dd>
+                <dt><span jhiTranslate="plitkashopApp.dostavka.price">Price</span></dt>
+                <dd>
+                    <span>{{dostavka.price}}</span>
+                </dd>
+                <dt><span jhiTranslate="plitkashopApp.dostavka.buyerPhone">Buyer Phone</span></dt>
+                <dd>
+                    <span>{{dostavka.buyerPhone}}</span>
+                </dd>
+                <dt><span jhiTranslate="plitkashopApp.dostavka.buyerAddress">Buyer Address</span></dt>
+                <dd>
+                    <span>{{dostavka.buyerAddress}}</span>
+                </dd>
+                <dt><span jhiTranslate="plitkashopApp.dostavka.buyerFio">Buyer Fio</span></dt>
+                <dd>
+                    <span>{{dostavka.buyerFio}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/dostavka', dostavka.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

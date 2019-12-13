@@ -1,0 +1,28 @@
+{
+  "plitkashopApp": {
+    "dostavka": {
+      "home": {
+        "title": "Dostavkas",
+        "createLabel": "Создать новый Dostavka",
+        "createOrEditLabel": "Создать или отредактировать Dostavka",
+        "notFound": "No Dostavkas found"
+      },
+      "created": "Новый Dostavka создан с идентификатором {{ param }}",
+      "updated": "Dostavka обновлен с идентификатором {{ param }}",
+      "deleted": "Dostavka удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Dostavka {{ id }}?"
+      },
+      "detail": {
+        "title": "Dostavka"
+      },
+      "date": "Date",
+      "name": "Name",
+      "count": "Count",
+      "price": "Price",
+      "buyerPhone": "Buyer Phone",
+      "buyerAddress": "Buyer Address",
+      "buyerFio": "Buyer Fio"
+    }
+  }
+}
